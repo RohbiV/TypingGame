@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1 id="head" data-text="Break.the.Words">Break.the.Words</h1>
     </header>
+    <hr class="timeleft">
+    <p class="time">Time left(second): 5</p>
+    <div class="outer">
+        <div class="side">
+            <h3>Instructions</h3>
+            <ol class="inst">
+                <li class="rule">You must type to start the game</li>
+                <li class="rule">You must type the word in a given amount of time</li>
+            </ol>
+        </div>
+        <div class="container">
+            <p class="word">Word</p>
+            <input type="text" placeholder="Start Typing">
+            <p id="msg">message</p>
+            <h4 class="score">Score:00</h4>
+        </div>
+    </div>
+
 </body>
+
 </html>

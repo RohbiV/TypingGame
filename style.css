@@ -1,30 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
-body{
+body {
     min-height: 100vh;
     background-color: #f4fea6;
 }
 
-header{
+header {
     display: flex;
     height: 10vh;
     justify-content: center;
     align-items: center;
 }
 
-h1{
+h1 {
     font-size: 4vw;
     color: #f4fea6;
     position: relative;
     -webkit-text-stroke: 0.2vw #4e4d46a6;
 }
 
-h1::before{
+h1::before {
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -39,11 +38,78 @@ h1::before{
 }
 
 @keyframes animate {
-    0%,10%,100% {
+    0%,
+    10%,
+    100% {
         width: 0%;
     }
 
-    80%,90%{
+    80%,
+    90% {
         width: 100%;
+    }
+}
+
+.timeleft {
+    width: 100%;
+    color: white;
+    height: 1.5rem;
+    background-color: rgb(38, 85, 85);
+}
+
+.time {
+    font-size: x-large;
+    color: #746a6a;
+}
+
+.outer {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+}
+
+.side {
+    align-self: center;
+    width: 15%;
+    height: fit-content;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 2rem;
+    .inst {
+        list-style-type: none;
+        .rule {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.container {
+    border: 1px solid black;
+    background-color: #b1ceae1f;
+    box-shadow: 5px 5px 5px rgb(75, 73, 73);
+    width: 50%;
+    min-height: 70vh;
+    text-align: center;
+
+    .word {
+        font-size: 6.5rem;
+    }
+    input[type="text"] {
+        padding: 10px;
+        width: 40%;
+        height: 4rem;
+        font-size: xx-large;
+        margin-top: 15%;
+    }
+
+    #msg{
+        padding: 10px;
+        margin: 10px;
+        font-size: 2.5rem;
+    }
+
+    .score{
+        margin-top: 12%;
+        font-size: 4rem;
     }
 }
